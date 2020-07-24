@@ -1,0 +1,33 @@
+* {
+    text-align: justify;
+}
+
+header {
+    margin-bottom: 60px;
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+}
+
+.cst-introduction p {
+    font-size: 19px;
+}
+
+.cst-data-input-section {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .cst-description {
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+.cst-loading-indicator {
+    width: 1rem;
+    height: 1rem;
+}

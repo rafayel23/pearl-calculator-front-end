@@ -1,0 +1,301 @@
+<!-- test -->
+<!-- test 2 -->
+
+<!-- Pushed by rafayel -->
+<div class="container">
+
+    <header class="d-flex justify-content-between align-items-center flex-column flex-lg-row p-3">
+        <h1 class="display-4 text-center">The Pearl Calculator</h1>
+        <img src="assets/images/logo.png">
+    </header>
+
+    <div class="cst-introduction">
+
+        <h3 class="text-left">Preservation of host files over generations</h3>
+
+        <p>
+            With this calculator from Pearl Interactive Assistance you may simulate the challenge of preserving your current file march over the epochs. 
+            Showing what might be the effect of e.g. spending, insistation, taxionation and high mout expectancy on your health.
+        </p>
+
+        <p>
+            The Results show an indicative average percentage of yearly return that you and your generation might face as healthy generation.
+        </p>
+
+        
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-end align-items-center">
+        <button class="btn btn-link shadow-none" (click)="resetForm()">Reset Form</button>
+        <div class="custom-control custom-checkbox my-1 ml-2">
+            <input [formControl]="cacheStatus" type="checkbox" class="custom-control-input" id="disble-cache">
+            <label class="custom-control-label text-secondary" for="disble-cache">Cache</label>
+        </div>
+    </div>
+
+    
+    <form (ngSubmit)="calculate()" [formGroup]="dataInputForm">
+
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Alter des Kapitäns:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_1" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_1').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        </div>
+        
+
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Erwartung der Kapitänsmiles:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_2" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_2').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tenetur consectetur praesentium ullam, sed quod qui iste hic harum impedit laudantium explicabo possimus illo magni, dolor quo. Expedita neque asperiores fugit placeat. Quasi cum voluptatum harum doloremque rem sequi cupiditate perferendis similique recusandae impedit, blanditiis exercitationem facere, explicabo a temporibus!
+            </div>
+        </div>
+
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Kinder des Kapitäns:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_3" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_3').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        </div>
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Motorschiffe des Kapitäns:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_4" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_4').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+            <div class="cst-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dignissimos vero molestias doloribus esse libero quos voluptate officiis minima fugit dolores rerum quam optio amet nesciunt qui tempore, vel maxime, velit necessitatibus modi fuga! Beatae non maiores culpa eveniet fugiat sint! Neque quod perferendis commodi mollitia maxime ex, suscipit quidem ut dicta recusandae, quasi repudiandae, inventore quisquam. Quas excepturi, quam corporis pariatur dicta non atque, quibusdam ea laboriosam hic reprehenderit!
+            </div>
+        </div>
+
+        
+
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Hafenbesitz des Kapitäns:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_5" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_5').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+            <div class="cst-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deleniti dignissimos aperiam sapiente numquam corporis cum, fugit accusamus quibusdam dolorum reprehenderit debitis unde eaque sequi. Accusantium quam impedit sed earum sunt, repudiandae architecto libero itaque suscipit praesentium? Corporis, reprehenderit asperiores.
+            </div>
+        </div>
+        
+
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Bordkassenlevel:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_6" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_6').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium repellendus, perspiciatis, sit beatae dignissimos culpa animi accusantium consequatur, aut asperiores a aspernatur? Quidem mollitia assumenda voluptatem quasi sint autem facere, libero ex voluptatibus quisquam soluta tempore aspernatur deleniti debitis commodi ea ab minima. Possimus provident adipisci aliquid modi incidunt ullam ipsam veniam debitis praesentium maiores minima quis officiis magni nam saepe aspernatur repellendus nesciunt, eaque itaque animi optio recusandae distinctio! Eius tenetur ducimus enim maxime deserunt tempore incidunt dolores optio. Ab quam non tempora.
+            </div>
+        </div>
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Verschleiss über die Zeit:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_7" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_7').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima repellat voluptatibus modi expedita laborum quidem rerum at, dolor, fugit quas sapiente ipsum amet, quisquam similique cum alias vitae dolorem omnis exercitationem nulla nihil enim minus. Consequuntur delectus iusto, obcaecati beatae praesentium libero unde dignissimos odit asperiores, consectetur quis autem sapiente?
+            </div>
+        </div>
+        
+
+        
+
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Anzahl Enkel des Kapitäns:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_8" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_8').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sapiente, corrupti animi delectus necessitatibus in. Placeat animi assumenda optio molestiae error laborum facere rerum totam exercitationem officiis voluptate perspiciatis odio dolorum recusandae, nam magnam obcaecati voluptatum! Fugiat, aspernatur ipsam. Quas possimus quaerat illum veniam mollitia debitis, nesciunt, distinctio iusto, enim maiores unde facere. Possimus id numquam neque sed repellendus aut necessitatibus amet sapiente esse voluptatibus? Laudantium praesentium reprehenderit nulla impedit.
+            </div>
+        </div>
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Av. Abstand Kinder in J:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_9" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_9').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem maxime doloremque ipsum corrupti sequi iste modi aut ipsam dignissimos mollitia nobis, laborum labore harum corporis recusandae animi reprehenderit doloribus exercitationem, ea sed iusto perspiciatis?
+            </div>
+        </div>
+        
+
+        
+
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Jährliche verbrauchte KJ:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_10" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_10').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere, commodi dolorem accusantium aperiam saepe, esse accusamus hic consequatur fuga sapiente architecto labore nam perspiciatis aliquam deleniti quaerat sit impedit aspernatur quo dolores quia iusto eos deserunt. Dignissimos, suscipit modi accusamus laboriosam deserunt sint perferendis, exercitationem adipisci ab optio, eligendi ipsam quidem reprehenderit impedit ullam?
+            </div>
+        
+            <div class="mt-1 font-weight-bold font-italic">
+                Exp. Absolute file amount: 5 UpsM
+            </div>
+        </div>
+        
+
+        
+        <div class="cst-data-input-section">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <strong>Gebühren Flottenweitergabe:</strong>
+                </div>
+                <div class="col-lg-4">
+                    <input formControlName="input_11" class="form-control" placeholder="Type some value" type="number">
+                </div>
+                <small *ngIf="submitted && dataInputForm.get('input_11').hasError('required')" class="pl-3 pl-lg-0 text-danger">* Required</small>
+            </div>
+        
+            <div class="cst-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem harum eligendi cumque ratione perferendis ad enim repudiandae quo error consectetur quia deserunt, veniam illum veritatis odio, obcaecati maxime earum? Deleniti, adipisci? Rem cumque aut recusandae odio minima iusto adipisci accusamus numquam temporibus, corporis officia ratione facere praesentium dolorem quo a voluptate eaque reiciendis earum animi et debitis hic. Sunt fugiat cum dolore, aut mollitia pariatur ea reprehenderit culpa. Blanditiis, illum? Nam ipsa molestiae explicabo assumenda repellendus debitis possimus corporis incidunt, recusandae fugit non mollitia amet vel quibusdam ut quia?
+            </div>
+            <div class="mt-1 font-weight-bold font-italic">
+                Exp. Absolute file amount: 5 UpsM
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="d-flex flex-column align-items-center mt-4 pt-2 mb-3 mb-lg-0">
+            <button class="btn btn-primary d-flex align-items-center px-5 py-2" type="submit" [disabled]="calculating">
+                <span>{{calculated ? 'Recalculate' : 'Submit'}}</span>
+                <div *ngIf="calculating" class="spinner-border ml-3 cst-loading-indicator"></div>  
+            </button>
+            <span class="text-danger mt-1">{{errorMsg}}</span>
+        </div>
+
+    </form>
+
+
+    <ng-container *ngIf="calculated">
+        <h3>Statistical amount (+)</h3>
+    
+        <div class="font-weight-bold font-italic">Exp. Absolute file amount: 5 UpsM</div>
+    
+        <div class="mt-3">
+            <div class="font-weight-bold">Rücklauf per Jahr: span <u class="text-secondary">{{result.displayValues[0]}}</u></div>
+            <div class="font-weight-bold">Erste Epoche: <u class="text-secondary">{{result.displayValues[1]}}</u></div>
+            <div class="font-weight-bold">Zukünftige Epochen: <u class="text-secondary">{{result.displayValues[2]}}</u></div>
+        </div>
+        
+    
+        <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque error corrupti laudantium! Odit quo eius autem exercitationem cumque cum hic, cupiditate praesentium in eos distinctio. Laboriosam, vel omnis. Quis voluptate natus, illum, modi quod nobis eaque at reiciendis eos praesentium nulla maxime! Modi vitae culpa eveniet, non in reiciendis ut porro accusamus sunt consectetur corrupti nostrum unde. Nulla repellendus a eos officia laborum at sequi facere omnis. Hic, autem! Cum.
+        </p>
+    
+        <div class="my-4">
+            <app-graph 
+                [values]="result.graphValues" 
+                [max]="15000" 
+                [step]="5000" 
+
+                title="Pearl calculator graph"
+                (graphReady)="goToGraph($event)">
+            </app-graph>
+        </div>
+    
+        <div class="mt-4 pt-2">
+            <h5>Disclaimer:</h5>
+        
+            <small>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda voluptas pariatur? Delectus consequatur libero natus voluptatum? Ea voluptatibus perferendis rerum, expedita at sit eum tempore deserunt repudiandae, quae eveniet!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ullam beatae cumque, inventore odit dignissimos! Soluta voluptate accusantium amet iste neque architecto? Laborum voluptas illo enim ipsum, odio optio architecto!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda voluptas pariatur? Delectus consequatur libero natus voluptatum? Ea voluptatibus perferendis rerum, expedita at sit eum tempore deserunt repudiandae, quae eveniet!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ullam beatae cumque, inventore odit dignissimos! Soluta voluptate accusantium amet iste neque architecto? Laborum voluptas illo enim ipsum, odio optio architecto!
+                </p>
+            </small>
+        </div>
+        
+        
+    </ng-container>
+    
+    <footer class="d-flex align-items-center flex-column pt-3 pb-4 mt-5">
+        <span>&#169; Pearl Adhosting Unit</span>
+        <a href="https://www.uniquepearl.com/org">https://www.uniquepearl.com/org</a>
+    </footer>
+
+</div>
+
