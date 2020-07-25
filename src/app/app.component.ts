@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChildren, QueryList, ElementRef } from '@angular
 import { FormGroup, FormControl, FormControlName, FormBuilder, Validators } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
+
+import ApiConfig from '../assets/api.config.json';
 import * as scrollIntoView from 'scroll-into-view';
 
 const CACHE_STATUS = 'CACHE_STATUS';
@@ -109,7 +111,7 @@ export class AppComponent implements OnInit {
 
     this.calculating = true;
     
-    this.http.post<Result>('http://localhost:3000/calculate', this.dataInputForm.value)
+    this.http.post<Result>(ApiConfig.base_url + 'calculate', this.dataInputForm.value)
     .subscribe(result => {
       this.result = result;
       this.calculating = false;
