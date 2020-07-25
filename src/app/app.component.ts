@@ -3,8 +3,8 @@ import { FormGroup, FormControl, FormControlName, FormBuilder, Validators } from
 import { debounceTime } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
+import scrollIntoView from 'scroll-into-view';
 import ApiConfig from '../assets/api.config.json';
-import * as scrollIntoView from 'scroll-into-view';
 
 const CACHE_STATUS = 'CACHE_STATUS';
 const CACHED_FORM_DATA = 'CACHED_FORM_DATA';
